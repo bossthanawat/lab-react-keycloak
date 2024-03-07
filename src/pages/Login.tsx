@@ -15,10 +15,7 @@ const LoginPage = () => {
   const { keycloak } = useKeycloak()
 
   const login = () => {
-    keycloak.login({
-      // username: "myuser",
-      // password: "@P@ssw0rd!1"
-    });
+    keycloak.login();
   };
 
   const loginByPassword = async () => {
